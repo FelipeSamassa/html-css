@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tentar abrir esse site em dispositivos diferentes</p>
+
+    <!-- Picture é uma imagem, só que permite que se crie vários src dentro dela -->
+    <!-- Bom colocar 50px a mais, é a folga para criar a barra de rolagem na web -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- 
+        Meios de conseguir alguns som ou música para usar no site, sem problemas:
+        Sempre cuidado com o tamanho do áudio, e direitos autorais
+        
+        1- youtube > youtube studio > biblioteca de audio > atribuição não necessária
+    -->
+    <h2>Reproduzindo áudios</h2>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <!-- Uma maneira mais simples
+        <audio src="./midia/doh-de-ho.mp3" controls autoplay></audio>
+    -->
+    <audio preload="metadata" autoplay controls> 
+        <source src="./midia/doh-de-ho.mp3" type="audio/mpeg">
+    </audio>
+    <!-- 
+        <source src="./midia/doh-de-ho.ogg" type="audio/ogg">
+        <source src="./midia/doh-de-ho.wav" type="audio/wav">
+    -->
+</body>
+</html>

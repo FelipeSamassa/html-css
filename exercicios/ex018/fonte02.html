@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "love story";
+            src: url("love story ttf.ttf") format("truetype");
+        }
+        /*
+        Caso eu mude de local, o que é o indicado para as fontes externas, tenho que colocar o nome da pasta que eu vou criar por exemplo (pastafonte/love story ttf.ttf)
+        */
+        /*
+        Tipos de format:
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'love story', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rerum itaque ipsam animi libero! Facilis consequuntur vero aliquam rerum incidunt dolores! Ratione inventore, iure iusto repudiandae quidem voluptate? Placeat, adipisci!</p>
+    <!-- 
+        Outro site bom para fontes:
+        Dafonte.com (Prestar sempre atenção se a fonte que eu quero tem todos os caracteres especiais, para acentuação e tudo mais)
+    -->
+
+    <!--
+        Para pegar fontes de qualquer site externo onde não se sabe qual é a fonte: só usar a externar (fonts ninja). Essa extensão vai servir para que eu possa ver a cor, a fonte, tamanho de qualquer fonte de site. Depois só procurar e usar.
+    -->
+
+    <!--
+        Tirand fonte de imagens: 3 sites.
+        Whatfontis.com - primeiro passo colocar a imagem, segundo passo editar a imagem para que fique da melhor maneira possível só a letra, depois pede para digitar as letras da imagem. (O melhor para isso)
+
+        Fontsquirrel.com - na parte de font identify, jogar a imagem, e ele achar a fonte (mais ou menos)
+
+        myfonts.com - na parte whatsthefont, jogar a imagem, ele acha a fonte (mais ou menos)
+    -->
+</body>
+</html>

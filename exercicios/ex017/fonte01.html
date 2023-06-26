@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts em CSS</title>
+    <style>
+        body{
+            /*Safe combination / no google pode achar com css websafe fotn combinations*/
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /*
+                Medidas absolutas - cm, mm, in (polegada), PX, pt, pc
+
+                Medidas relativas - EM, ex, rem (root), vw, vh, % 
+
+                16px geralmente = 1em 
+            */ 
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+            /*Somente alguma poucas tem isso:
+            Peso da fonte : lighter, normal, bold, bolder
+            Pode ser também números: 100-900
+
+            Itálico também não são todos que aceitam
+            */
+            text-decoration: underline;
+        }
+
+        h1{
+            font-family: "Work Sans", sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*
+            shorthand font
+            ordem: style -> weight -> size, family
+            font: italic bolder 3em "Work Sans", sans-serif;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis blanditiis sunt! Quibusdam corrupti aliquid magnam, assumenda tempore doloribus iusto itaque atque doloremque. Aut, odit dolore fugit voluptatibus nulla excepturi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat iusto sed ex suscipit! Commodi exercitationem non est, repudiandae corporis officiis laboriosam dolorum. Distinctio veritatis ratione eligendi esse tempora sunt at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ratione quisquam eveniet neque ipsa quod laudantium officia, laboriosam explicabo tempore corrupti quaerat aspernatur porro hic, impedit incidunt odit? Earum, voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis modi dolorum reiciendis, quas itaque, quaerat vero sequi earum enim nam similique ipsum eligendi eum est explicabo pariatur laborum corporis.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste velit natus iusto consequatur. Quaerat molestiae maiores ipsa placeat consequuntur, neque ipsam quis libero repellendus iure aut. Blanditiis, a! Perspiciatis!</p>
+
+    <!-- 
+        Fonte pafrão do google, times new roma, serifada. 
+    -->
+</body>
+</html>

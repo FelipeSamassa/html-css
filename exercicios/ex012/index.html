@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <!-- 
+        Vídeos, uma boa opção, é o pexels.
+        Melhores formatos para uso:
+        .mp4 , .m4v , .webm , .ogv
+
+        Bom site para uso:
+        handbrake
+        vídeos acima de 1080p não hospedar, vai custar muitooooo
+    -->
+
+    <h1>Vídeos no HTML (Hospedagem local)</h1>
+    <p>Este vídeo está no meu computador</p>
+
+    <!--
+        <video src="./midia/Meu-Video-720.mp4" width="300" height="300" controls></video>
+    -->
+    <!--Para colocar um foto de capa, uso a tag <poster> e escolho aonde está o meu arquivo -->
+    
+    <!--Vídeos hospedados com a tag <video>, vai dar muito trafego de dados, isso vai acarretar em muito gasto para o cliente. -->
+    <video width="560" height="400" poster="./imagens/auau.png" controls autoplay loop>
+        <source src="./midia/Meu-Video-720.mp4" type="video/mp4">
+        <source src="./midia/Meu-Video-webm.mkv" type="video/mkv">
+    </video>
+
+    <!-- Outro meio muito bom para usar vídeos, é de maneira externa, por exemplo do YouTube, indo em compartilhar, incorporar, vai ter a tag <iframe>, que permite colocar no html-->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Outro site bom para isso é o (Vímeo), tem uma vantagem em relação ao youtube, o vídeo é melhor, a desvantagem é mais pesado e o código não é tão bom.-->
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/631774445?h=7317ae3e6d&portrait=0" width="560" height="259" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
+
+38

@@ -1,0 +1,44 @@
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f;
+}
+
+/* 
+já que eu coloquei um ID no HTML no CSS é # (seletor)
+h1#principal ou #principal (a diferença é que sem a tag h1 ele poderia editar qualquer tag que tivesse o mesmo nome)
+*/
+#principal{
+    text-align: center;
+    background-color: #3c805e;
+    color: #fff;
+}
+
+h2{
+    color: #3c805e;
+}
+
+/*
+    Regra do w3c eu não devo usar mais de um mesmo ID por página, ex (id="Principal em mais de um h1"), se eu quiser eu posso criar outro ID com nome diferente e estilizar de outra forma.
+
+    Quando se quer personalizar por exemplo mais de 1 h1, eu uso o class. (class no HTML e . no CSS)
+*/
+
+.basico{
+    color: #3c805e;
+}
+
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
+
+.destaque{
+    background-color: #c5c56070;
+}

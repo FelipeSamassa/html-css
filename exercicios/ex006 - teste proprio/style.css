@@ -1,0 +1,55 @@
+/*
+Palheta de cores
+#E13838 - vermelho
+#E02222 - vermelho mais forte
+#22E058 - verde
+#2D3DE0 - azul
+#E0C14F - amarelo
+
+*/
+
+:root{
+    --cor01: #da50508f;
+    --cor02: #e92d2d;
+    --cor03: #63cf55a4;
+    --cor04: #2D3DE0;
+    --cor05: #E0C14F;
+
+    --font-basica: arial, helvetica, sans-serif;
+    --font-estilizada: ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor03);
+    font-family: var(--font-basica);
+    text-align: center;
+    max-width: 1000px;
+}
+
+header h1{
+    margin-bottom: 25px;
+    padding-top: 10px;
+    color: var(--cor04);
+}
+
+header h2{
+    padding-bottom: 15px;
+    color: var(--cor05);
+}
+
+main{
+    background-color: var(--cor01);
+    max-width: 1000px;
+    padding: 15px;
+    text-align: justify;
+}
+
+main h2{
+    font-size: 1.5em;
+    color: var(--cor04);
+}
