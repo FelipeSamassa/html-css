@@ -12,12 +12,20 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            /*Por padrão é 'auto', tem o 'contain' que mostra 100% do tamanho da imagem, 'cover' vai cobrir tudo, mesmo que tenha que cortar parte da imagem.*/
+            /* Por padrão é 'auto', tem o 'contain' que mostra 100% do tamanho da imagem, 'cover' vai cobrir tudo, mesmo que tenha que cortar parte da imagem.*/
+            background-attachment: fixed; /*scroll - o fundo rola com o conteúdo, fixed - rolo o conteúdo mas fica o fundo parado*/
+
+            /* Shorthand - background 
+                color > image > position > repeat > [size] > attachment 
+                Size - diz que funciona mas na verdade ainda não funciona, ou seja, não se pode colocar ele no shorthand, ele tem que ser separado.
+
+                background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed; 
+            */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +36,8 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam. Impedit recusandae sit sapiente quas dolores saepe tempore facere, dolore voluptatum nam laboriosam minus non odio dignissimos nisi ad ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure eos tempora aspernatur id a porro tenetur suscipit repellendus ratione enim maiores, sunt accusantium tempore excepturi minima ex repudiandae perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt culpa voluptatem repellendus, quod, aperiam cum voluptatum rem minima veniam debitis corporis! Officia adipisci earum quia temporibus distinctio saepe ipsa?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam. Impedit recusandae sit sapiente quas dolores saepe tempore facere, dolore voluptatum nam laboriosam minus non odio dignissimos nisi ad ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure eos tempora aspernatur id a porro tenetur suscipit repellendus ratione enim maiores, sunt accusantium tempore excepturi minima ex repudiandae perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt culpa voluptatem repellendus, quod, aperiam cum voluptatum rem minima veniam debitis corporis! Officia adipisci earum quia temporibus distinctio saepe ipsa?</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, ullam. Impedit recusandae sit sapiente quas dolores saepe tempore facere, dolore voluptatum nam laboriosam minus non odio dignissimos nisi ad ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure eos tempora aspernatur id a porro tenetur suscipit repellendus ratione enim maiores, sunt accusantium tempore excepturi minima ex repudiandae perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt culpa voluptatem repellendus, quod, aperiam cum voluptatum rem minima veniam debitis corporis! Officia adipisci earum quia temporibus distinctio saepe ipsa?</p>
     </main>
 </body>
