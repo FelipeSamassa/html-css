@@ -14,7 +14,9 @@
     --fonr3: "Sriracha", cursive;
 }
 
-body{
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
     font-family: var(--font1);
 }
 
@@ -36,28 +38,41 @@ header p{
     padding-bottom: 50px;
 }
 
-header a{
+ a{
     text-decoration: none;
     color: #ffffff;
+    font-weight: bolder;
 }
 
-strong:hover{
+a:hover{
     text-decoration: underline;
 }
 
 section{
-    font-family: var(--fonr3);
-    font-size: 3.5vw;
-    padding: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh; 
+    line-height: 2em; /*espaçamento entre linhas*/
+    padding-left: 30px;
 }
 
-#container1{
-    position: relative;
-    background-image: url("./imagens/background001.jpg");
-    max-width: 400px;
-    max-height: 500px;
+section.normal {
+    background-color: white;
+    color: black;
 }
 
-#conteudo1{
-    position: absolute;
+section.imagem{
+    background-color: rgb(75, 75, 75);
+    color: white
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
 }
