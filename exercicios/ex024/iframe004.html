@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet, modi cum rem sequi eius blanditiis iure ut repellendus accusamus facere aliquam a quod tempore officiis dolore, ullam quo laudantium!</p>
+
+    <!--
+        Para dar uma segurança maior ao site, posso usar o <sandbox="sandbox">, ele trava qualquer uso que possa ser malicioso de site externo. 
+            Mas eu posso diminuir um pouco a segurança caso eu queira fazer algo no site, como um formulário. Se eu usar o <sandbox="allow-same-origin"> eu permito que coisas que estão no mesmo "lugar" possam ser usadas. <sandbox="allow-forms"> eu permito formulário.
+            
+        referrerpolicy="no-referrer" - significa que o que está dentro do iframe nesse caso não vai coletar qualquer tipo de informação, por exemplo para fica enviando email ou anuncios.
+    -->
+    <iframe src="./paginas-extras/pagina004.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo earum obcaecati, nihil reiciendis, magnam officiis fugiat praesentium laboriosam quisquam quae recusandae distinctio. Officia hic perferendis perspiciatis soluta maxime dolor saepe.</p>
+</body>
+</html>
