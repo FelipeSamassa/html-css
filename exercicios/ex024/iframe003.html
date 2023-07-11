@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dignissimos cupiditate impedit adipisci at quod quo, nemo et perferendis nostrum ipsam in qui voluptate ratione quae ex architecto dolorem nam?</p>
+
+    <ul>
+        <li><a href="./paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="./paginas-extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="./paginas-extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul> 
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus qui, aliquam adipisci rem sequi quam mollitia. Laboriosam, ex, dicta in culpa quia sed modi quisquam hic, tenetur id suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam eligendi id minus qui reiciendis adipisci. Ipsam, repellendus nulla obcaecati reiciendis doloremque itaque delectus. Obcaecati corrupti animi id aliquam voluptas quidem?</p>
+
+    <!--Colocando o <name> e chamando lá em cima no <a> faço com que o arquivo seja chamado nesse iframe no mesmo site-->
+    <!--no lugar de <src> posso usar o<srcdoc> que dentro dele posso carregar um <html> por exemplo-->
+    <!--Recomendável caso queira algo mais rebuscado criar algo em outro arquivo e rodar aqui depois, pois nesse método é muito limitado o que se pode fazer e pode acabar ficando confuso-->
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore exercitationem consequatur fugit? Modi, ipsa rem sit maiores adipisci magni numquam ea earum blanditiis perspiciatis! Ipsa quas id voluptatum laboriosam?</p><img src='./paginas-extras/logo-github.jpg'>" name="frame">
+        <p>Infelizmente seu navagador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quasi esse aliquid facere numquam quaerat consequatur enim, atque aliquam quibusdam ex fugit. Laudantium ipsa minus laborum, deleniti debitis animi nobis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias consectetur veritatis, nihil magnam unde illum dolores similique quibusdam vitae, dignissimos quidem ipsa saepe harum quia fugit optio, eaque ea omnis?</p>
+</body>
+</html>
