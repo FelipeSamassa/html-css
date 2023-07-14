@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+        O <input email> não é 100% excelente, ele só obriga que o campo tenha um "@", caso o usuário coloque ele permite o envio, necessita de mais configurações para validar. Tanto em <EMAIL> quanto <TEL>, o que vai validar de fato é a linguagem de programação.
+        o <input tel> tem uma compatibilidade diferente com os celulares que pode puxar seus contatos.
+    -->
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!-- Agrupamento de campos semelhantes -->
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+               <label for="iemail">Email</label>
+               <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4}-[0-9]{4}$" required>
+            </p>
+        </fieldset>
+        <!-- 
+            Expressões regulares - RegEx 
+            \(\d{2}\) - dois dígitos entre parênteses
+            [0-9]{4}-[0-9]{4} - de 0 a 9, 4 vezes, depois um - e de novo de 0 a 9, 4 vezes.
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
